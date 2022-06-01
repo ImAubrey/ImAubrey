@@ -19,12 +19,13 @@ ruleset=📺 哔哩|爱奇艺,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Cla
 ruleset=📼 MyTVSuper,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/MyTVSuper.list
 ruleset=🎥 奈飞节点,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
 
-ruleset=DIRECT,[]FINAL
+ruleset=D
+other,[]FINAL
 ;设置规则标志位
 
 ;设置分组标志
 
-custom_proxy_group=DIRECT`select`[]DIRECT
+custom_proxy_group=other`select`[]DIRECT
 custom_proxy_group=unlocker`select`.*
 ;other
 custom_proxy_group=📀 Spotify`select`[]DIRECT`[]unlocker
