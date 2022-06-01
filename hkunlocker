@@ -25,11 +25,11 @@ other,[]FINAL
 
 ;设置分组标志
 
-custom_proxy_group=other`select`[]DIRECT
-custom_proxy_group=unlocker`select`(|)
+custom_proxy_group=other`select`.*
+
 ;other
-custom_proxy_group=📀 Spotify`select`[]DIRECT`[]unlocker
-custom_proxy_group=📹 油管视频`select`[]DIRECT`[]unlocker
-custom_proxy_group=🎥 奈飞节点`select`[]DIRECT`[]unlocker
-custom_proxy_group=📺 哔哩|爱奇艺`select`[]DIRECT`[]unlocker
-custom_proxy_group=📼 MyTVSuper`select`[]DIRECT`[]unlocker
+custom_proxy_group=📀 Spotify`select`[]DIRECT`.*
+custom_proxy_group=📹 油管视频`select`[]DIRECT`.*
+custom_proxy_group=🎥 奈飞节点`select`[]DIRECT`.*
+custom_proxy_group=📺 哔哩|爱奇艺`select`[]DIRECT`.*
+custom_proxy_group=📼 MyTVSuper`select`[]DIRECT`.*
