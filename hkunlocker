@@ -26,7 +26,7 @@ other,[]FINAL
 ;设置分组标志
 
 custom_proxy_group=other`select`[]DIRECT
-custom_proxy_group=unlocker`select`.*
+custom_proxy_group=unlocker`select`(|)
 ;other
 custom_proxy_group=📀 Spotify`select`[]DIRECT`[]unlocker
 custom_proxy_group=📹 油管视频`select`[]DIRECT`[]unlocker
