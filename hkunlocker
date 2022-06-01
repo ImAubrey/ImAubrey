@@ -24,7 +24,7 @@ ruleset=DIERCT,[]FINAL
 
 ;设置分组标志
 
-
+custom_proxy_group=DIRECT`select`[]DIRECT
 custom_proxy_group=unlocker`select`.*
 ;other
 custom_proxy_group=📀 Spotify`select`[]DIRECT`[]unlocker
