@@ -19,7 +19,7 @@ ruleset=📺 哔哩|爱奇艺,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Cla
 ruleset=📼 MyTVSuper,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/MyTVSuper.list
 ruleset=🎥 奈飞节点,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
 
-ruleset=DIERCT,[]FINAL
+ruleset=DIRECT,[]FINAL
 ;设置规则标志位
 
 ;设置分组标志
