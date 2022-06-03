@@ -8,7 +8,8 @@
 ;苹果分流：支持
 ;增强中国IP段：支持
 ;增强国外GFW：支持
-
+ruleset=🎞 Disney,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/DisneyPlus.list
+ruleset=💾 Abema,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AbemaTV.list
 ruleset=📹 油管视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
 ruleset=🎥 奈飞节点,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
 ruleset=🎥 奈飞节点,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetflixIP.list
@@ -28,6 +29,8 @@ other,[]FINAL
 custom_proxy_group=other`select`[]DIRECT
 
 ;other
+custom_proxy_group=🎞 Disney`select`[]DIRECT`.*
+custom_proxy_group=💾 Abema`select`[]DIRECT`.*
 custom_proxy_group=📀 Spotify`select`[]DIRECT`.*
 custom_proxy_group=📹 油管视频`select`[]DIRECT`.*
 custom_proxy_group=🎥 奈飞节点`select`[]DIRECT`.*
