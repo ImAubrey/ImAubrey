@@ -29,7 +29,7 @@ ruleset=🐔 HBO|HULU,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/C
 ruleset=🐔 HBO|HULU,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Hulu.list
 
 ruleset=🐔 HBO|HULU,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/HuluJapan.list
-custom_proxy_group=⛳️ 国外媒体`select`.*
+
 
 other,[]FINAL
 ;设置规则标志位
@@ -39,7 +39,8 @@ other,[]FINAL
 custom_proxy_group=other`select`[]DIRECT
 
 ;other
-custom_proxy_group=🐔 HBO|HULU`select`.*
+
+custom_proxy_group=🐔 HBO|HULU`select`[]DIRECT`.*
 custom_proxy_group=🎞 Disney`select`[]DIRECT`.*
 custom_proxy_group=💾 Abema`select`[]DIRECT`.*
 custom_proxy_group=📀 Spotify`select`[]DIRECT`.*
@@ -47,3 +48,4 @@ custom_proxy_group=📹 油管视频`select`[]DIRECT`.*
 custom_proxy_group=🎥 奈飞节点`select`[]DIRECT`.*
 custom_proxy_group=📺 哔哩|爱奇艺`select`[]DIRECT`.*
 custom_proxy_group=📼 MyTVSuper`select`[]DIRECT`.*
+custom_proxy_group=⛳️ 国外媒体`select``[]DIRECT`.*
