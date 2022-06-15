@@ -147,7 +147,6 @@ dns:
 #rules:
 #- GEOIP,CN,DIRECT
 #  - 'MATCH,DIRECT'
-
 rule-providers:
   Reject:
     type: http
@@ -479,45 +478,56 @@ rule-providers:
     url: https://dler.cloud/Rules/Clash/Provider/LAN.yaml
     path: "./rule_provider/LAN"
     interval: 86400
+  Crypto:
+    type: http
+    behavior: classical
+    url: https://dler.cloud/Rules/Clash/Provider/Crypto.yaml
+    path: "./rule_provider/Crypto"
+    interval: 86400
+
 script:
   code: "def main(ctx, metadata):\n    ruleset_action = {\"Reject\": \"REJECT\",\n
     \       \"Special\": \"DIRECT\",\n        \"Netflix\": \"\U0001F3A5 奈飞节点\",\n
     \       \"Spotify\": \"\U0001F4C0 Spotify\",\n        \"YouTube\": \"\U0001F4F9
     油管视频\",\n        \"Disney Plus\": \"\U0001F39E Disney\",\n        \"Bilibili\":
-    \"\U0001F4FA 哔哩|爱奇艺\",\n        \"IQ\": \"⛳️ 国外媒体\",\n        \"IQIYI\": \"⛳️
-    国外媒体\",\n        \"Letv\": \"⛳️ 国外媒体\",\n        \"Netease Music\": \"⛳️ 国外媒体\",\n
-    \       \"Tencent Video\": \"⛳️ 国外媒体\",\n        \"Youku\": \"⛳️ 国外媒体\",\n        \"WeTV\":
-    \"⛳️ 国外媒体\",\n        \"ABC\": \"⛳️ 国外媒体\",\n        \"Abema TV\": \"⛳️ 国外媒体\",\n
-    \       \"Amazon\": \"⛳️ 国外媒体\",\n        \"Apple News\": \"⛳️ 国外媒体\",\n        \"Apple
-    TV\": \"⛳️ 国外媒体\",\n        \"Bahamut\": \"\U0001F4FA 巴哈姆特\",\n        \"BBC iPlayer\":
-    \"⛳️ 国外媒体\",\n        \"DAZN\": \"⛳️ 国外媒体\",\n        \"Discovery Plus\": \"DIRECT\",\n
-    \       \"encoreTVB\": \"⛳️ 国外媒体\",\n        \"F1 TV\": \"⛳️ 国外媒体\",\n        \"Fox
-    Now\": \"⛳️ 国外媒体\",\n        \"Fox+\": \"⛳️ 国外媒体\",\n        \"HBO Go\": \"\U0001F414
-    HBO|HULU\",\n        \"HBO Max\": \"\U0001F414 HBO|HULU\",\n        \"Hulu Japan\":
-    \"⛳️ 国外媒体\",\n        \"Hulu\": \"⛳️ 国外媒体\",\n        \"Japonx\": \"⛳️ 国外媒体\",\n
-    \       \"JOOX\": \"⛳️ 国外媒体\",\n        \"KKBOX\": \"⛳️ 国外媒体\",\n        \"KKTV\":
-    \"⛳️ 国外媒体\",\n        \"Line TV\": \"⛳️ 国外媒体\",\n        \"myTV SUPER\": \"⛳️
-    国外媒体\",\n        \"Pandora\": \"⛳️ 国外媒体\",\n        \"PBS\": \"⛳️ 国外媒体\",\n        \"Pornhub\":
-    \"DIRECT\",\n        \"Soundcloud\": \"⛳️ 国外媒体\",\n        \"ViuTV\": \"⛳️ 国外媒体\",\n
-    \       \"Telegram\": \"DIRECT\",\n        \"Douyin\": \"\U0001F4E1 国内改IP\",\n
-    \       \"Steam\": \"DIRECT\",\n        \"Speedtest\": \"DIRECT\",\n        \"PayPal\":
+    \"\U0001F4FA 哔哩|爱奇艺\",\n        \"IQ\": \"\U0001F1EF\U0001F1F5 日本节点\",\n        \"IQIYI\":
+    \"\U0001F1EF\U0001F1F5 日本节点\",\n        \"Letv\": \"\U0001F1EF\U0001F1F5 日本节点\",\n
+    \       \"Netease Music\": \"\U0001F1EF\U0001F1F5 日本节点\",\n        \"Tencent Video\":
+    \"\U0001F1EF\U0001F1F5 日本节点\",\n        \"Youku\": \"\U0001F1EF\U0001F1F5 日本节点\",\n
+    \       \"WeTV\": \"\U0001F1EF\U0001F1F5 日本节点\",\n        \"ABC\": \"⛳️ 国外媒体\",\n
+    \       \"Abema TV\": \"⛳️ 国外媒体\",\n        \"Amazon\": \"⛳️ 国外媒体\",\n        \"Apple
+    News\": \"⛳️ 国外媒体\",\n        \"Apple TV\": \"⛳️ 国外媒体\",\n        \"Bahamut\":
+    \"\U0001F4FA 巴哈姆特\",\n        \"BBC iPlayer\": \"⛳️ 国外媒体\",\n        \"DAZN\":
+    \"⛳️ 国外媒体\",\n        \"Discovery Plus\": \"DIRECT\",\n        \"encoreTVB\":
+    \"⛳️ 国外媒体\",\n        \"F1 TV\": \"⛳️ 国外媒体\",\n        \"Fox Now\": \"⛳️ 国外媒体\",\n
+    \       \"Fox+\": \"⛳️ 国外媒体\",\n        \"HBO Go\": \"\U0001F414 HBO|HULU\",\n
+    \       \"HBO Max\": \"\U0001F414 HBO|HULU\",\n        \"Hulu Japan\": \"⛳️ 国外媒体\",\n
+    \       \"Hulu\": \"⛳️ 国外媒体\",\n        \"Japonx\": \"⛳️ 国外媒体\",\n        \"JOOX\":
+    \"⛳️ 国外媒体\",\n        \"KKBOX\": \"⛳️ 国外媒体\",\n        \"KKTV\": \"⛳️ 国外媒体\",\n
+    \       \"Line TV\": \"⛳️ 国外媒体\",\n        \"myTV SUPER\": \"⛳️ 国外媒体\",\n        \"Pandora\":
+    \"⛳️ 国外媒体\",\n        \"PBS\": \"⛳️ 国外媒体\",\n        \"Pornhub\": \"\U0001F3A5
+    奈飞节点\",\n        \"Soundcloud\": \"⛳️ 国外媒体\",\n        \"ViuTV\": \"⛳️ 国外媒体\",\n
+    \       \"Telegram\": \"\U0001F4F1 海外社交APP\",\n        \"Crypto\": \"\U0001F4F1
+    海外社交APP\",\n        \"Douyin\": \"\U0001F4E1 国内改IP\",\n        \"Steam\": \"\U0001F579
+    Steam|Sony\",\n        \"Speedtest\": \"\U0001F1EF\U0001F1F5 日本节点\",\n        \"PayPal\":
     \"\U0001F4F1 海外社交APP\",\n        \"Microsoft\": \"\U0001F34EⓂ️ 苹果微软\",\n        \"Apple\":
     \"\U0001F34ETV|\U0001F34AChromecast\",\n        \"Google FCM\": \"\U0001F4E2 谷歌\",\n
-    \       \"Scholar\": \"DIRECT\",\n        \"PROXY\": \"DIRECT\",\n        \"Domestic\":
-    \"DIRECT\",\n        \"Domestic IPs\": \"DIRECT\",\n        \"LAN\": \"DIRECT\"\n
-    \     }\n\n    port = int(metadata[\"dst_port\"])\n\n    if metadata[\"network\"]
-    == \"UDP\":\n        if port == 443:\n            ctx.log('[Script] matched QUIC
-    traffic use reject')\n            return \"REJECT\"\n\n    port_list = [21, 22,
-    23, 53, 80, 123, 143, 194, 443, 465, 587, 853, 993, 995, 998, 2052, 2053, 2082,
-    2083, 2086, 2095, 2096, 5222, 5228, 5229, 5230, 8080, 8443, 8880, 8888, 8889]\n
-    \   if port not in port_list:\n        ctx.log('[Script] not common port use direct')\n
-    \       return \"DIRECT\"\n\n    if metadata[\"dst_ip\"] == \"\":\n        metadata[\"dst_ip\"]
+    \       \"Scholar\": \"\U0001F4E2 谷歌\",\n        \"PROXY\": \"\U0001F1F8\U0001F1EC
+    狮城自动\",\n        \"Domestic\": \"\U0001F1E8\U0001F1F3 中国大陆\",\n        \"Domestic
+    IPs\": \"\U0001F1E8\U0001F1F3 中国大陆\",\n        \"LAN\": \"DIRECT\"\n      }\n\n
+    \   port = int(metadata[\"dst_port\"])\n\n    if metadata[\"network\"] == \"UDP\":\n
+    \       if port == 443:\n            ctx.log('[Script] matched QUIC traffic use
+    reject')\n            return \"REJECT\"\n\n    port_list = [21, 22, 23, 53, 80,
+    123, 143, 194, 443, 465, 587, 853, 993, 995, 998, 2052, 2053, 2082, 2083, 2086,
+    2095, 2096, 5222, 5228, 5229, 5230, 8080, 8443, 8880, 8888, 8889]\n    if port
+    not in port_list:\n        ctx.log('[Script] not common port use direct')\n        return
+    \"DIRECT\"\n\n    if metadata[\"dst_ip\"] == \"\":\n        metadata[\"dst_ip\"]
     = ctx.resolve_ip(metadata[\"host\"])\n\n    for ruleset in ruleset_action:\n        if
     ctx.rule_providers[ruleset].match(metadata):\n            return ruleset_action[ruleset]\n\n
     \   if metadata[\"dst_ip\"] == \"\":\n        return \"DIRECT\"\n\n    code =
     ctx.geoip(metadata[\"dst_ip\"])\n    if code == \"CN\":\n        ctx.log('[Script]
-    Geoip CN')\n        return \"DIRECT\"\n\n    ctx.log('[Script] FINAL')\n    return
-    \"DIRECT\"\n"
+    Geoip CN')\n        return \"\U0001F1E8\U0001F1F3 中国大陆\"\n\n    ctx.log('[Script]
+    FINAL')\n    return \"\U0001F41F 漏网之鱼\"\n"
 rules:
 - DST-PORT,7895,REJECT
 - DST-PORT,7892,REJECT
