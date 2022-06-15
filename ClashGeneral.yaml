@@ -530,8 +530,8 @@ script:
     FINAL')\n    return \"\U0001F41F 漏网之鱼\"\n"
     
 rules:
-- DOMAIN-SUFFIX,有问题TG联系,DIRECT
-- DOMAIN-SUFFIX,@HiMiBot,DIRECT
+- DOMAIN-KEYWORD,有问题telegram找,DIRECT
+- DOMAIN-KEYWORD,@HiMiBot,DIRECT
 - DST-PORT,7895,REJECT
 - DST-PORT,7892,REJECT
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
