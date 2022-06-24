@@ -621,7 +621,7 @@ rules:
 - "RULE-SET,Youku,🌏 大陆媒体"
 - "RULE-SET,WeTV,🌏 大陆媒体"
 - RULE-SET,ABC,⛳️ 国外媒体
-- RULE-SET,Abema TV,⛳️ 国外媒体
+- RULE-SET,Abema TV,💾 Abema
 - RULE-SET,Amazon,⛳️ 国外媒体
 - RULE-SET,Apple News,⛳️ 国外媒体
 - RULE-SET,Apple TV,⛳️ 国外媒体
