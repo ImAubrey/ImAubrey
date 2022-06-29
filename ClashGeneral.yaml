@@ -576,8 +576,8 @@ rules:
 - DST-PORT,7895,REJECT
 - DST-PORT,7892,REJECT
 - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
-- PROCESS-PATH,/usr/sbin/trojan-plus,DIRECT
-- PROCESS-PATH,/usr/bin/trojan-go,DIRECT
+#- PROCESS-PATH,/usr/sbin/trojan-plus,DIRECT
+#- PROCESS-PATH,/usr/bin/trojan-go,DIRECT
 - DST-PORT,1900,REJECT
 - IP-CIDR,10.0.0.0/8,DIRECT
 - IP-CIDR,192.168.0.0/16,DIRECT
