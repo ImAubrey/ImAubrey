@@ -490,8 +490,7 @@ script:
     \       \"Special\": \"DIRECT\",\n 
        \"Netflix\": \"\U0001F3A5 奈飞节点\",\n
     \       \"Spotify\": \"\U0001F4C0 Spotify\",\n 
-       \"YouTube\": \"\U0001F4F9
-    油管视频\",\n 
+       \"YouTube\": \"\U0001F4F9 油管|BBC\",\n 
        \"Disney Plus\": \"\U0001F39E Disney\",\n 
        \"Bilibili\":
     \"\U0001F4FA 哔哩|爱奇艺\",\n 
@@ -512,7 +511,7 @@ script:
        \"Apple TV\": \"🍎TV|🍊Chromecast\",\n 
        \"Bahamut\":
     \"\U0001F4FA 巴哈姆特\",\n 
-       \"BBC iPlayer\": \"⛳️ 国外媒体\",\n 
+       \"BBC iPlayer\": \"📹 油管|BBC\",\n 
        \"DAZN\":
     \"⛳️ 国外媒体\",\n 
        \"Discovery Plus\": \"DIRECT\",\n 
@@ -610,7 +609,7 @@ rules:
 - "RULE-SET,Special,DIRECT"
 - "RULE-SET,Netflix,\U0001F3A5 奈飞节点"
 - "RULE-SET,Spotify,\U0001F4C0 Spotify"
-- "RULE-SET,YouTube,\U0001F4F9 油管视频"
+- "RULE-SET,YouTube,\U0001F4F9 油管|BBC"
 - "RULE-SET,Disney Plus,\U0001F39E Disney"
 - "RULE-SET,Bilibili,\U0001F4FA 哔哩|爱奇艺"
 - "RULE-SET,IQ,🌏 大陆媒体"
@@ -626,7 +625,7 @@ rules:
 - RULE-SET,Apple News,⛳️ 国外媒体
 - RULE-SET,Apple TV,⛳️ 国外媒体
 - "RULE-SET,Bahamut,\U0001F4FA 巴哈姆特"
-- RULE-SET,BBC iPlayer,⛳️ 国外媒体
+- "RULE-SET,BBC iPlayer,\U0001F4F9 油管|BBC"
 - RULE-SET,DAZN,⛳️ 国外媒体
 - RULE-SET,Discovery Plus,DIRECT
 - RULE-SET,encoreTVB,⛳️ 国外媒体
