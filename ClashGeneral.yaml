@@ -550,8 +550,8 @@ script:
        \"Microsoft\": \"\U0001F34EⓂ️ 苹果微软\",\n 
        \"Apple\":
     \"\U0001F34EⓂ️ 苹果微软\",\n 
-       \"Google FCM\": \"\U0001F4E2 谷歌\",\n
-    \       \"Scholar\": \"\U0001F4E2 谷歌\",\n 
+       \"Google FCM\": \"\U0001F4E2 谷歌|Amazon\",\n
+    \       \"Scholar\": \"\U0001F4E2 谷歌|Amazon\",\n 
        \"PROXY\": \"\U0001F1F8\U0001F1EC
     狮城自动\",\n 
       \"Domestic\": \"\U0001F1E8\U0001F1F3 中国大陆\",\n 
@@ -655,6 +655,6 @@ rules:
 - "RULE-SET,PayPal,\U0001F4F1 海外社交APP"
 - "RULE-SET,Microsoft,\U0001F34EⓂ️ 苹果微软"
 - "RULE-SET,Apple,\U0001F34ETV|\U0001F34AChromecast"
-- "RULE-SET,Google FCM,\U0001F4E2 谷歌"
-- "RULE-SET,Scholar,\U0001F4E2 谷歌"
+- "RULE-SET,Google FCM,\U0001F4E2 谷歌|Amazon"
+- "RULE-SET,Scholar,\U0001F4E2 谷歌|Amazon"
 - RULE-SET,LAN,DIRECT
