@@ -600,8 +600,8 @@ rules:
 - "DOMAIN-SUFFIX,JP,🇯🇵 日本节点"
 - "DOMAIN-SUFFIX,SG,🇸🇬 狮城节点"
 - "DOMAIN-SUFFIX,TW,🇨🇳 台湾节点"
-- "DOMAIN-SUFFIX,UK,🇬🇧 英德节点"
-- "DOMAIN-SUFFIX,DE,🇬🇧 英德节点"
+#- "DOMAIN-SUFFIX,UK,🇬🇧 英德节点"
+#- "DOMAIN-SUFFIX,DE,🇬🇧 英德节点"
 
 - "DOMAIN-SUFFIX,winudf.com,🇺🇲 美洲节点"
 - "DOMAIN-SUFFIX,flurry.com,\U0001F1E8\U0001F1F3 台湾节点"
